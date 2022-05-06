@@ -52,9 +52,13 @@ cat viral.*.protein.faa > viral.protein.faa
 grep -c ">" *faa
 ```
 > viral.1.protein.faa:51652
+
 > viral.2.protein.faa:219237
+
 > viral.3.protein.faa:290246
+
 > viral.4.protein.faa:18116
+
 > viral.protein.faa:579251
 
 ```
@@ -64,11 +68,19 @@ diamond blastx -d viralproteins.dmnd -q virome_R2_QF_paired.fq -o virome_R2_QF_p
 cat virome_R1_QF_paired_vs_viralprotein.m8  virome_R2_QF_paired_vs_viralprotein.m8 > virome_vs_viralprotein.m8
 ```
 > Para R1
-> Total time = 11.18s
-> Reported 133163 pairwise alignments, 133163 HSPs.
-> 13533 queries aligned.
+
+>> Total time = 11.18s
+
+>> Reported 133163 pairwise alignments, 133163 HSPs.
+
+>> 13533 queries aligned.
 
 > Para R2
-> Total time = 11.684s
-> Reported 154832 pairwise alignments, 154832 HSPs.
-> 15236 queries aligned.
+
+>> Total time = 11.684s
+
+>> Reported 154832 pairwise alignments, 154832 HSPs.
+
+>> 15236 queries aligned.
+
+unzip prot_acc2tax-Jul2019X1.abin.zip
