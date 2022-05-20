@@ -101,7 +101,7 @@ Para importar los ficheros se ha utilizado la interfaz gráfica, de forma que:
 
 Obteniéndose la siguiente clasificación a nivel de familia:
 
-![JPEG]https://github.com/Sofia-Gonzalez-Matatoros/METAG_unit_4/blob/45a1856c0f405e29650722125a59a9cdfd91b0ea/virome_R1-2.jpg
+![JPEG](https://github.com/Sofia-Gonzalez-Matatoros/METAG_unit_4/blob/45a1856c0f405e29650722125a59a9cdfd91b0ea/virome_R1-2.jpg)
 
 
 
