@@ -34,8 +34,10 @@ fastqc virome_R2.fastq -o virome_fastqc/
 #### 2.2. Filtramos con Trimmomatic
 En la práctica de la unidad 3 se explica por qué se eligen estos parámetros
 ```
-trimmomatic PE -phred33 virome_R1.fastq virome_R2.fastq virome_R1_QF_paired.fq virome_R1_QF_unpaired.fq virome_R2_QF_paired.fq virome_R2_QF_unpaired.fq SLIDINGWINDOW:4:20 MINLEN:149
+trimmomatic PE -phred33 virome_R1.fastq virome_R2.fastq virome_R1_QF_paired.fq virome_R1_QF_unpaired.fq \
+virome_R2_QF_paired.fq virome_R2_QF_unpaired.fq SLIDINGWINDOW:4:20 MINLEN:149
 ```
+Nótese que se trata de una única línea de comando, se ha dividido en este caso para facilitar su visualización al convertir el archivo a PDF.
 #### 2.3. Comprobamos la calidad de los datos filtrados
 ```
 mkdir virome_QF_fastqc
@@ -104,11 +106,9 @@ Para importar los ficheros se ha utilizado la interfaz gráfica, de forma que:
 - En *Specify the READ files to import* se han seleccionado virome_clean.1.fq, virome_clean.2.fq
 - En *Load Accession mapping file* se ha indicado prot_acc2tax-Jul2019X1.abin
 
-Obteniéndose la siguiente clasificación a nivel de familia:
+Obteniéndose la clasificación a nivel de familia que se puede observar en la figura inferior. Se puede comprobar que la mayoría de las lecturas pertenecen a bacteriófagos de la familia Siphoviridae.
 
 ![JPEG](https://github.com/Sofia-Gonzalez-Matatoros/METAG_unit_4/blob/45a1856c0f405e29650722125a59a9cdfd91b0ea/virome_R1-2.jpg)
 
-
-Al observar la imagen se puede comprobar que la mayoría de las lecturas pertenecen a bacteriófagos de la familia Siphoviridae.
 
 
