@@ -1,5 +1,11 @@
-# METAG_unit_4. Sofía González Matatoros
-## Fecha: 20/05/2022
+# METAG_unit_4. 
+
+Alumna: Sofía González Matatoros
+
+Fecha: 20/05/2022
+
+Enlace a github: https://github.com/Sofia-Gonzalez-Matatoros/METAG_unit_4.git 
+
 ## Ejercicio
 
 Follow the workflow of this tutorial for the taxonomic binning of the virome reads and contigs used as homework in the unit_3.
@@ -21,14 +27,13 @@ unzip virome.zip
 ### 2. Preprocesado
 #### 2.1. Comprobamos la calidad inicial de los datos
 ```
-#--FASTQ quality assessment
 mkdir virome_fastqc
 fastqc virome_R1.fastq -o virome_fastqc/
 fastqc virome_R2.fastq -o virome_fastqc/
 ```
 #### 2.2. Filtramos con Trimmomatic
+En la práctica de la unidad 3 se explica por qué se eligen estos parámetros
 ```
- En la práctica de la unidad 3 se explica por qué se eligen estos parámetros
 trimmomatic PE -phred33 virome_R1.fastq virome_R2.fastq virome_R1_QF_paired.fq virome_R1_QF_unpaired.fq virome_R2_QF_paired.fq virome_R2_QF_unpaired.fq SLIDINGWINDOW:4:20 MINLEN:149
 ```
 #### 2.3. Comprobamos la calidad de los datos filtrados
@@ -104,5 +109,6 @@ Obteniéndose la siguiente clasificación a nivel de familia:
 ![JPEG](https://github.com/Sofia-Gonzalez-Matatoros/METAG_unit_4/blob/45a1856c0f405e29650722125a59a9cdfd91b0ea/virome_R1-2.jpg)
 
 
+Al observar la imagen se puede comprobar que la mayoría de las lecturas pertenecen a bacteriófagos de la familia Siphoviridae.
 
 
