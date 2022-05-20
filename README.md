@@ -98,3 +98,6 @@ Para importar los ficheros se ha utilizado la interfaz gráfica, de forma que:
 - En *Specify the Blast files to import* se han seleccionado los ficheros: virome_R1_QF_paired_vs_viralprotein.m8, virome_R2_QF_paired_vs_viralprotein.m8
 - En *Specify the READ files to import* se han seleccionado virome_clean.1.fq, virome_clean.2.fq
 - En *Load Accession mapping file* se ha indicado prot_acc2tax-Jul2019X1.abin
+
+Obteniéndose la siguiente clasificación a nivel de familia:
+![jpg]
